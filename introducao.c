@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-int main(void) {
-    printf("hello world .");
+int main(void){
+    unsigned int x = 2147483648;
+    printf("%ld",x);
+
     return 0;
-}
+}       
