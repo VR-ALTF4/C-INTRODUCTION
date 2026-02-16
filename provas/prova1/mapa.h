@@ -12,18 +12,23 @@ typedef struct
 
 bool inicializar_mapa(Mapa *mapa)
 {
-    int i, j = 0;
-    while (i < LARGURA)
+    for (int i = 0; i < LARGURA; i++)
     {
-        while (j < ALTURA)
+        for (int j = 0; j < ALTURA; j++)
         {
             mapa->blocos[i][j] = 0;
-            j++;
         }
-        i++;
     }
 
     return true;
 }
-
-
+void imprimir_mapa(Mapa *mapa)
+{
+    for (int i = 0; i < LARGURA; i++)
+    {
+        for (int j = 0; j < ALTURA; j++)
+        {
+            printf("%i",mapa->blocos[i][j]);
+        }
+    }
+}
