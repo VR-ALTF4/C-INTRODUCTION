@@ -4,9 +4,21 @@
 #define LARGURA 10
 #define ALTURA 10
 
+typedef struct {
+    int x;
+    int y;
+
+
+}Posicao;
+
+
+
+
+
+
 typedef struct
 {
-    int blocos[LARGURA][ALTURA];
+    char blocos[LARGURA][ALTURA];
 
 } Mapa;
 
@@ -16,7 +28,7 @@ bool inicializar_mapa(Mapa *mapa)
     {
         for (int j = 0; j < ALTURA; j++)
         {
-            mapa->blocos[i][j] = 0;
+            mapa->blocos[i][j] = '_';
         }
     }
 
@@ -28,8 +40,9 @@ void imprimir_mapa(Mapa *mapa)
     {
         for (int j = 0; j < ALTURA; j++)
         {
-            printf("%i",mapa->blocos[i][j]);
+            printf("%c ",mapa->blocos[i][j]);
         }
         printf("\n");
     }
 }
+
