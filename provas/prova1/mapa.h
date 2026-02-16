@@ -30,5 +30,6 @@ void imprimir_mapa(Mapa *mapa)
         {
             printf("%i",mapa->blocos[i][j]);
         }
+        printf("\n");
     }
 }
