@@ -55,7 +55,7 @@
     {
         "label": "Run C Program",
         "command": "gcc",
-        "args": ["$ZED_FILE", "-o", "/tmp/zed_run_c", "-lm", "&&", "/tmp/zed_run_c"],
+        "args": ["$ZED_FILE", "-o", "/tmp/zed_run_c", "&&", "/tmp/zed_run_c"],
         "tags": ["c-main"],
         "shell": "system",
         "reveal_target": "dock",
